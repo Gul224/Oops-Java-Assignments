@@ -1,0 +1,29 @@
+<html>
+<head>
+<script>
+class Human {
+  constructor(name) {
+    this.name = name;
+  }
+
+  sayHi() {
+    console.log(`Hi! My name is ${this.name}`);
+  }
+}
+
+class Developer extends Human{
+sayHi() {
+    console.log(`Hi! My name is ${this.name}. I am a QA.`)
+  }
+
+}
+
+let person= new Human('Gul');
+let person2= new Developer('Gul');
+person.sayHi();
+person2.sayHi();
+</script>
+</head>
+<body>
+</body>
+</html>
