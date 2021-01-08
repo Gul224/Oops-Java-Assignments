@@ -1,0 +1,25 @@
+<html>
+<head>
+<script>
+//encapsulation example 
+class person{ 
+    constructor(fname,lname){ 
+        this.fname = fname; 
+        this.lname = lname; 
+    } 
+    add_Address(addr){ 
+        this.addr = addr; 
+    } 
+    getDetails(){ 
+        console.log(`Name is ${this.fname + this.lname},Address is: ${this.addr}`); 
+    } 
+} 
+  
+let person1 = new person('Gul','shaik'); 
+person1.add_Address('hyderabad'); 
+person1.getDetails();
+</script>
+</head>
+<body>
+</body>
+</html>
